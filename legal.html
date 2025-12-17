@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JP Morgan Chase | Legal & Compliance</title>
+  <style>
+    * { box-sizing: border-box; font-family: "Inter", Arial, Helvetica, sans-serif; }
+    body { margin: 0; background: #ffffff; color: #0f172a; }
+
+    header {
+      background: #ffffff;
+      padding: 22px 48px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    header img { height: 60px; }
+
+    .page {
+      max-width: 1100px;
+      margin: 40px auto 80px;
+      padding: 0 24px;
+    }
+
+    .section-title {
+      margin-top: 32px;
+      margin-bottom: 16px;
+      font-size: 22px;
+      color: #0a2540;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+      margin-bottom: 32px;
+    }
+
+    .question {
+      margin-bottom: 28px;
+    }
+
+    .question p {
+      margin: 0 0 10px;
+      font-size: 15px;
+      color: #1e293b;
+      font-weight: 500;
+    }
+
+    .options {
+      display: flex;
+      gap: 24px;
+      font-size: 14px;
+      color: #334155;
+    }
+
+    .options label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+
+    .checkbox {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #334155;
+    }
+
+    .actions {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #0a2540, #123b6f);
+      color: #ffffff;
+      border: none;
+      padding: 14px 36px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 24px;
+      text-align: center;
+      font-size: 14px;
+      color: #64748b;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    @media (max-width: 768px) {
+      .options { flex-direction: column; gap: 10px; }
+      header { padding: 18px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://media.designrush.com/inspiration_images/757008/conversions/JPMorgan-Chase-Logo-SVG-desktop.jpg" alt="JP Morgan Chase Logo" />
+</header>
+
+<div class="page">
+
+  <div class="section-title">Legal & Compliance Declarations</div>
+
+  <div class="card">
+
+    <div class="question">
+      <p>1. Are you currently bound by any non-compete or restrictive covenant agreement?</p>
+      <div class="options">
+        <label><input type="radio" name="q1" /> Yes</label>
+        <label><input type="radio" name="q1" /> No</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>2. Do you have any ongoing legal obligations that may restrict your employment with JP Morgan Chase & Co.?</p>
+      <div class="options">
+        <label><input type="radio" name="q2" /> Yes</label>
+        <label><input type="radio" name="q2" /> No</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>3. Have you ever been employed by or associated with a government, military, or defense organization?</p>
+      <div class="options">
+        <label><input type="radio" name="q3" /> Yes</label>
+        <label><input type="radio" name="q3" /> No</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>4. Are you legally authorized to work in the country where this position is based?</p>
+      <div class="options">
+        <label><input type="radio" name="q4" /> Yes</label>
+        <label><input type="radio" name="q4" /> No</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>5. Do you require current or future visa sponsorship to work for JP Morgan Chase & Co.?</p>
+      <div class="options">
+        <label><input type="radio" name="q5" /> Yes</label>
+        <label><input type="radio" name="q5" /> No</label>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>6. Do you agree that JP Morgan Chase & Co. is an equal opportunity employer and that employment decisions are made without discrimination?</p>
+      <div class="options">
+        <label><input type="radio" name="q6" /> Yes</label>
+        <label><input type="radio" name="q6" /> No</label>
+      </div>
+    </div>
+
+    <div class="checkbox">
+      <input type="checkbox" />
+      <label>I certify that the information provided above is true, complete, and accurate to the best of my knowledge.</label>
+    </div>
+
+  </div>
+
+  <div class="actions">
+    <button class="btn" type="button" onclick="window.history.back()">Back</button>
+    <button class="btn" type="button" onclick="window.location.href='action.html'">Submit Application</button>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 JP Morgan Chase & Co. All rights reserved.
+</footer>
+
+</body>
+</html>

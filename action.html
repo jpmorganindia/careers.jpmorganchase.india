@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JP Morgan Chase | Application Status</title>
+  <style>
+    * { box-sizing: border-box; font-family: "Inter", Arial, Helvetica, sans-serif; }
+    body { margin: 0; background: #f8fafc; color: #0f172a; }
+
+    header {
+      background: #ffffff;
+      padding: 22px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    header img { height: 56px; }
+
+    .page {
+      max-width: 1100px;
+      margin: 40px auto 80px;
+      padding: 0 24px;
+    }
+
+    .status-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 48px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    .status-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+
+    .status-header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #0a2540;
+    }
+
+    .badge {
+      padding: 8px 18px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      background: #e0f2fe;
+      color: #075985;
+    }
+
+    .timeline {
+      display: flex;
+      justify-content: space-between;
+      margin: 40px 0;
+      gap: 12px;
+    }
+
+    .step {
+      flex: 1;
+      text-align: center;
+    }
+
+    .circle {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      margin: 0 auto 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      background: #0a2540;
+      color: #ffffff;
+    }
+
+    .inactive .circle {
+      background: #cbd5e1;
+      color: #475569;
+    }
+
+    .step span {
+      font-size: 13px;
+      color: #334155;
+      font-weight: 500;
+    }
+
+    .details {
+      background: #f1f5f9;
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 32px;
+      font-size: 14px;
+      color: #334155;
+    }
+
+    .actions {
+      margin-top: 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #0a2540, #123b6f);
+      color: #ffffff;
+      border: none;
+      padding: 14px 34px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid #dc2626;
+      color: #dc2626;
+      padding: 12px 30px;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #020617;
+      color: #cbd5e1;
+      padding: 64px 24px;
+    }
+
+    .footer-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .footer-content h3 {
+      margin-top: 0;
+      color: #e5e7eb;
+      font-size: 16px;
+    }
+
+    .footer-content p {
+      margin-bottom: 20px;
+      color: #94a3b8;
+    }
+
+    .footer-actions {
+      margin-top: 32px;
+      text-align: center;
+    }
+
+    .home-btn {
+      background: #ffffff;
+      color: #020617;
+      padding: 14px 36px;
+      border-radius: 14px;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .timeline { flex-direction: column; gap: 24px; }
+      header { padding: 18px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://media.designrush.com/inspiration_images/757008/conversions/JPMorgan-Chase-Logo-SVG-desktop.jpg" alt="JP Morgan Chase Logo" />
+</header>
+
+<div class="page">
+
+  <div class="status-card">
+
+    <div class="status-header">
+      <h1>Application Submitted</h1>
+      <div class="badge">Under Review</div>
+    </div>
+
+    <div class="timeline">
+      <div class="step">
+        <div class="circle">1</div>
+        <span>Submitted</span>
+      </div>
+      <div class="step">
+        <div class="circle">2</div>
+        <span>Reviewed</span>
+      </div>
+      <div class="step inactive">
+        <div class="circle">3</div>
+        <span>Shortlisted</span>
+      </div>
+      <div class="step inactive">
+        <div class="circle">4</div>
+        <span>Offered</span>
+      </div>
+    </div>
+
+    <div class="details">
+      <strong>Application ID:</strong> JPM-IND-2025-09421<br />
+      <strong>Current Status:</strong> Your profile is being reviewed by our recruitment team.<br />
+      <strong>Next Step:</strong> You may be contacted for an assessment or interview.
+    </div>
+
+    <div class="actions">
+      <button class="btn-outline" type="button">Withdraw Application</button>
+      <button class="btn" type="button" onclick="window.location.href='index.html'">Go to Home</button>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-content">
+    <h3>Equal Opportunity & Data Privacy</h3>
+    <p>JP Morgan Chase & Co. is an equal opportunity employer. We do not discriminate on the basis of race, color, religion, sex, gender identity, sexual orientation, national origin, age, disability, veteran status, or any other legally protected characteristic.</p>
+    <p>All personal information provided as part of the recruitment process is collected, stored, and processed in accordance with applicable data protection laws and JP Morgan Chase & Co. privacy policies. Your data will be used solely for recruitment, background verification, and employment eligibility purposes.</p>
+    <p>By submitting your application, you acknowledge and consent to the processing of your personal data as described above. For more information, please review our full Privacy Notice and Equal Employment Opportunity policy.</p>
+
+    <div class="footer-actions">
+      <button class="home-btn" onclick="window.location.href='index.html'">Return to Home</button>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

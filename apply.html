@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JP Morgan Chase | Apply</title>
+  <style>
+    * { box-sizing: border-box; font-family: "Inter", Arial, Helvetica, sans-serif; }
+    body { margin: 0; background: #ffffff; color: #0f172a; }
+
+    /* Header (same as home) */
+    header {
+      background: #ffffff;
+      padding: 22px 48px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    header img { height: 60px; }
+
+    /* Container */
+    .page {
+      max-width: 1100px;
+      margin: 40px auto 80px;
+      padding: 0 24px;
+    }
+
+    /* Resume Upload */
+    .upload-card {
+      border: 2px dashed #cbd5e1;
+      border-radius: 20px;
+      padding: 48px;
+      text-align: center;
+      background: #f8fafc;
+      margin-bottom: 48px;
+    }
+    .upload-card h1 {
+      margin-top: 0;
+      font-size: 28px;
+      color: #0a2540;
+    }
+    .upload-card p {
+      color: #475569;
+      margin-bottom: 24px;
+    }
+    .upload-card input {
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    /* Section Divider */
+    .section-title {
+      margin-top: 48px;
+      margin-bottom: 16px;
+      font-size: 20px;
+      color: #0a2540;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+
+    /* Form */
+    form {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+    }
+    .field label {
+      font-size: 14px;
+      margin-bottom: 6px;
+      color: #334155;
+    }
+    .field input, .field select {
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid #cbd5e1;
+      font-size: 14px;
+    }
+
+    .full { grid-column: 1 / -1; }
+
+    /* Checkbox */
+    .checkbox {
+      display: flex;
+      gap: 12px;
+      margin-top: 12px;
+      color: #334155;
+      font-size: 14px;
+    }
+
+    /* Button */
+    .actions {
+      margin-top: 40px;
+      text-align: right;
+    }
+    .btn {
+      background: linear-gradient(135deg, #0a2540, #123b6f);
+      color: #ffffff;
+      border: none;
+      padding: 14px 36px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    .btn:hover { opacity: 0.9; }
+
+    /* Footer */
+    footer {
+      margin-top: 80px;
+      padding: 24px;
+      text-align: center;
+      font-size: 14px;
+      color: #64748b;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    @media (max-width: 768px) {
+      .grid { grid-template-columns: 1fr; }
+      header { padding: 18px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="https://media.designrush.com/inspiration_images/757008/conversions/JPMorgan-Chase-Logo-SVG-desktop.jpg" alt="JP Morgan Chase Logo" />
+  </header>
+
+  <div class="page">
+
+    <!-- Resume Upload -->
+    <section class="upload-card">
+      <h1>Submit Your Application</h1>
+      <p>Upload your resume to automatically populate your application</p>
+      <div style="margin-top:24px;">
+        <label style="display:inline-flex;align-items:center;gap:14px;cursor:pointer;background:#ffffff;border:2px solid #0a2540;padding:18px 28px;border-radius:16px;font-weight:600;color:#0a2540;">
+          <span style="font-size:26px;">📄</span>
+          <span>Upload Resume</span>
+          <input type="file" style="display:none;" />
+        </label>
+      </div>
+    </section>
+
+    <!-- Personal Details -->
+    <form>
+      <div class="section-title">Personal Details</div>
+
+      <div class="grid">
+        <div class="field">
+          <label>First Name</label>
+          <input type="text" placeholder="Enter first name" />
+        </div>
+        <div class="field">
+          <label>Last Name</label>
+          <input type="text" placeholder="Enter last name" />
+        </div>
+        <div class="field">
+          <label>Email Address</label>
+          <input type="email" placeholder="name@email.com" />
+        </div>
+        <div class="field">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+91 XXXXX XXXXX" />
+        </div>
+        <div class="field">
+          <label>Gender</label>
+          <select><option>Select</option><option>Male</option><option>Female</option><option>Other</option></select>
+        </div>
+        <div class="field">
+          <label>Date of Birth</label>
+          <input type="date" />
+        </div>
+        <div class="field">
+          <label>Nationality</label>
+          <input type="text" />
+        </div>
+        <div class="field">
+          <label>Current City</label>
+          <input type="text" />
+        </div>
+        <div class="field full">
+          <label>Current Address</label>
+          <input type="text" />
+        </div>
+        <div class="field">
+          <label>LinkedIn Profile</label>
+          <input type="url" placeholder="https://linkedin.com/in/" />
+        </div>
+        <div class="field">
+          <label>GitHub / Portfolio</label>
+          <input type="url" placeholder="https://github.com/" />
+        </div>
+      </div>
+
+      
+      <div class="checkbox">
+        <input type="checkbox" />
+        <label>I agree to JP Morgan Chase & Co. privacy policy and data processing terms.</label>
+      </div>
+
+      <div class="actions">
+        <button type="button" class="btn" onclick="window.location.href='edu.html'">Save & Proceed</button>
+      </div>
+    </form>
+
+  </div>
+
+  <footer>
+    © 2025 JP Morgan Chase & Co. All rights reserved.
+  </footer>
+
+</body>
+</html>
